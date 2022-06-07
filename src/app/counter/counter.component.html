@@ -1,6 +1,6 @@
 <h1> Contador: {{cont}}</h1>
 <hr>
-<app-button-add (onAdd)="handleAdd($event)"></app-button-add>
-<app-button-rest (resultChange)="handleRest($event)"></app-button-rest>
+<app-button-add [cont]="cont" (onAdd)=" handleCounter($event)"></app-button-add>
+<app-button-rest [cont]="cont" (onDiss)=" handleCounter($event)"></app-button-rest>
 
 

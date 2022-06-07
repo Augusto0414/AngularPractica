@@ -8,11 +8,11 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 export class ButtonRestComponent {
   @Input()
   cont: number = 0;
-  result: number = 0;
-  @Output() resultChange = new EventEmitter<number>();
+  resul:number = 0;
+  @Output() onDiss: EventEmitter<number> = new EventEmitter();
   rest() {
-    this.result = (this.cont > 0) ? this.cont-- : 0;
-    this.resultChange.emit(this.result);
+    this.resul = (this.cont > 0) ? this.cont-- : 0;
+    this.onDiss.emit(this.cont);
   }
 
 }
