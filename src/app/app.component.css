@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  border: 1px solid #45a049;
+  background-color:transparent;
+  color: #45a049;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}

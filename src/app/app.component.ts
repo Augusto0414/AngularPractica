@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practica';
+  cont: number = 0;
+  result : number = 0;
+  add(){
+    this.cont++;
+  }
+  rest(){
+    this.result = (this.cont > 0) ? this.cont-- : 0;
+  }
 }
