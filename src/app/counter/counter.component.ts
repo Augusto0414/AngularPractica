@@ -7,11 +7,10 @@ import { Component } from "@angular/core";
 
 export class CounterComponent {
   cont: number = 0;
-  result: number = 0;
-  add() {
-    this.cont++;
+  handleAdd(value: number) {
+    this.cont = value;
   }
-  rest() {
-    this.result = (this.cont > 0) ? this.cont-- : 0;
+  handleRest(value: number) {
+  this.cont = value;
   }
 }
